@@ -8,3 +8,4 @@ semana 17 examen remedial con costo. $10-$11 (sustituye al examen final)
 Practicas prep -> 300 horas
 laborables 
 Comunidad
+
