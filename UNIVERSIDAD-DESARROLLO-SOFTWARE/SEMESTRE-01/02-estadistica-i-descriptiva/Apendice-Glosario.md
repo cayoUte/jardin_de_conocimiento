@@ -58,3 +58,17 @@ Son **valores numéricos** que **resumen la información** contenida en el **con
 
     - #### Media Aritmética (Mean, x̄)
       El promedio de todos los valores. Se calcula sumando todos los datos y dividiendo por el número total de datos. Es muy sensible a valores extremos (outliers).
+
+El numero de intervalos en funcion del conjunto de datos (n)
+  K = 1 +3.322Log(n) 1+Log2(n)
+
+## Rango
+Diferencia entre el valor maximo y minimo de nuestros datos.
+**R = Xmax - Xmin**
+
+## Amplitud 
+Numero de datos que se incluyen en un intervalo.
+A = 
+## Marca de clase
+Mitad de cada intervalo
+MC = (Li + Ls)/2
