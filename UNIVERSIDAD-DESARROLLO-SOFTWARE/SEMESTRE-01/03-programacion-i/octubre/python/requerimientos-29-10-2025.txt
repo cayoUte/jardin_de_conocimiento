@@ -1,0 +1,4 @@
+La empresa XYZ necesita automatizar los siguientes procesos:
+-Control de temperatura
+-Valor de sueldos(diario, mensual, anual)
+-Calculo de areas y perimetro de 4 figuras basicas
