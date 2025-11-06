@@ -14,12 +14,7 @@ users_credentials = [
     [2, "Donatelo", "emp123"],
     [3, "Raphael", "guest"]
     ]
-roles = [
-    [1, "Administrador"], 
-    [2, "Empleado"], 
-    [3, "Invitado"]
-    ]
-user_roles = [[1, 1], [2, 2], [3, 3], [1, 2]]  # [user_id, role_id]
+
 # Inicio del programa
 company_name = "Construcciones XYZ"
 divider = "=" * 50
@@ -29,6 +24,7 @@ print(f"Bienvenido a {company_name}")
 print(divider)
 
 # Solicitar credenciales de usuario
+
 print ("Ingrese sus datos para continuar:")
 username = input("Nombre de usuario: ")
 password = input("Contraseña: ")
@@ -36,7 +32,8 @@ password = input("Contraseña: ")
 # Verificar credenciales
 authenticated = False
 isNewUser = True
-user_id = None
+
+
 for user in users_credentials:
 	if user[1] == username and user[2] == password:
 		authenticated = True
@@ -44,15 +41,20 @@ for user in users_credentials:
 		break
 	elif user[1] == username:
 		isNewUser = False
-        print("Contraseña incorrecta. Intente de nuevo.")
+		print("Contraseña incorrecta. Intente de nuevo.")
+		exit()
+
+if authenticated:
+	print(f"¡Bienvenido, {username}!")	
+else:
+    print("Autenticación fallida.")
+    
 if not authenticated and isNewUser:
 	print("Usuario no encontrado. Creando una nueva cuenta.")
 	new_user_id = len(users_credentials) + 1
 	new_password = input("Ingrese una nueva contraseña: ")
 	users_credentials.append([new_user_id, username, new_password])
-	user_roles.append([new_user_id, 2])  # Asignar rol de Empleado por defecto
-	print("Cuenta creada exitosamente. Ahora puede iniciar sesión.")
-	exit()
+	print(f"Cuenta creada exitosamente. Ahora puedes iniciar sesión, {username}.")
 
 process_list = ["Control de temperatura", "Cálculo de sueldos", "Cálculo de áreas y perímetros de figuras básicas", "Salir"] 
 
