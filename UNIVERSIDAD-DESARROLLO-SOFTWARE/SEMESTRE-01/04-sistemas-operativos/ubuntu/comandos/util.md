@@ -20,8 +20,8 @@ sudo
 elevar a superusuario
 sudo su
 
-addgroup
-
+addgroup <nombre>
+groupadd -g <id> <nuevo>
 usermod -a -G <group> <user>
 
 si el root es el owner de un archivo el resto de usuarios no puede escribir, usuarios.
@@ -30,7 +30,9 @@ etc/group
 
 su - <usuario>
 
-c/shadow
-c/passwd
+etc/shadow / informacion de usuario
+etc/passwd // que puede o no hacer el usuario
 
-passwd
+passwd <usario> // cambiar el password
+
+

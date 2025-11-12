@@ -58,9 +58,27 @@ Son **valores numéricos** que **resumen la información** contenida en el **con
 
     - #### Media Aritmética (Mean, x̄)
       El promedio de todos los valores. Se calcula sumando todos los datos y dividiendo por el número total de datos. Es muy sensible a valores extremos (outliers).
+      Datos aqgrupados: ΣXi/n
+      Datos no agrupados = Σ(x . f)/ n
+    - #### Media
+      Endatos agrupados: x = Σ( . F)/N
+    - #### Mediana 
+      Es una medida que indica la observacion de la mitad, despues que se han ordenado los datos. Para conocer la posicion de lamediana, se emplea la siguiente formula:
+      Me = n+1/2 en datos agrupados se usa la [**frecuencia**](./Apendice-Glosario.md) acumulada y se aproxima al inmediato superior
+      Me = L.inferior + ( ((n/2) - F_subi_menos1)/fi) . A
+
+    - #### Moda
+      Es la observacion o dato que socurre con mayor [**frecuencia**](./Apendice-Glosario.md#).
+      
+      Mo = L_inferior + ((fi - f_imenos1)/ (fi - f_imenos1) + (fi + f_imas1)) . A
+
+    - #### Media ponderada 
+      Para la medida simple cada observacion tien igual importancia (peso). Sin embargo, en algunos casos, puede quererse dar mayor peso a algunas de lass observaciones. La media ponderada permite asignar un peso especifico a una ovarias de las observaciones. 
+       Xw = ΣXW/ ΣW
+       Donde : Xw: la media ponderada.  X: es la observacion individual.  W: Es el peso o ponderacion asignada a cada obsevacion.
 
 El numero de intervalos en funcion del conjunto de datos (n)
-  K = 1 +3.322Log(n) 1+Log2(n)
+  K = 1 +3.322Log(n) | 1+Log2(n)
 
 ## Rango
 Diferencia entre el valor maximo y minimo de nuestros datos.
@@ -72,3 +90,4 @@ A =
 ## Marca de clase
 Mitad de cada intervalo
 MC = (Li + Ls)/2
+
