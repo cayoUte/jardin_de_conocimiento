@@ -19,3 +19,6 @@ grep -inr <pattern> .
 
 busca el numero especificado\
 grep -r2 <pattern>
+
+
+
