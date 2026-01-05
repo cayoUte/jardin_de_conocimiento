@@ -91,3 +91,16 @@ A =
 Mitad de cada intervalo
 MC = (Li + Ls)/2
 
+## Axiomas de Probabilidades
+P(A) >= 0
+P(s) = 1
+P(A U B) = P(A) + P(B) // mutuamente excluyentes
+P(C U D) = P(C) + _(D) - (Pc ∩ Pb) // no mutuamente excluyentes
+
+## Teoremas de Probabilidades
+P(A)= 0 // evento imposible
+0 < P(A) < 1 = evento probable // cuando esta mas cerca a 1 es mas probable y viceverza
+## Espacios o sucesos
+Los espacios muestrales son todos los eventos pobrables. La probabilidad del espacio muestral es igual a uno.
+### ReglaLaplace
+P(A) = (eventos_favorables)/todos_los_eventos_probables
