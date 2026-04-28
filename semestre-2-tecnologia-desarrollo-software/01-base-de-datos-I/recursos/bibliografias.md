@@ -1,0 +1,1 @@
+https://dbml.dbdiagram.io/docs/#schema-definition
